@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI工具导航</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            color: white;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        nav {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 1rem 0;
+        }
+        
+        nav ul li {
+            margin: 0 1.5rem;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 600;
+            padding: 0.5rem 0;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #6e8efb;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        
+        section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+        }
+        
+        h2 {
+            color: #6e8efb;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        h3 {
+            color: #555;
+            margin: 1.5rem 0 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .tool-card {
+            background-color: #f9fafc;
+            border-radius: 6px;
+            padding: 1.2rem;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-left: 4px solid #a777e3;
+        }
+        
+        .tool-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tool-name {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+        
+        .tool-link {
+            color: #6e8efb;
+            text-decoration: none;
+            word-break: break-all;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+        
+        .tool-link:hover {
+            text-decoration: underline;
+        }
+        
+        .country-label {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            background-color: #e1e8ff;
+            color: #4a6cf7;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #fff;
+            color: #666;
+            font-size: 0.9rem;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-wrap: wrap;
+            }
+            
+            nav ul li {
+                margin: 0.5rem 1rem;
+            }
+            
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>AI工具导航</h1>
+        <p>精选国内外优秀人工智能工具与平台</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#large-models">大模型</a></li>
+            <li><a href="#foreign-models">国外大模型</a></li>
+            <li><a href="#domestic-models">国内大模型</a></li>
+            <li><a href="#ai-agents">AI智能体</a></li>
+            <li><a href="#foreign-agents">国外智能体</a></li>
+            <li><a href="#domestic-agents">国内智能体</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <section id="large-models">
+            <h2>一、大模型</h2>
+            
+            <div id="foreign-models">
+                <h3>1、国外大模型</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">ChatGPT <span class="country-label">国外</span></div>
+                        <a href="https://chatgpt.com/" class="tool-link" target="_blank">https://chatgpt.com/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Claude <span class="country-label">国外</span></div>
+                        <a href="https://chatgpt.com/" class="tool-link" target="_blank">https://chatgpt.com/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">you.com <span class="country-label">国外</span></div>
+                        <a href="https://you.com/" class="tool-link" target="_blank">https://you.com/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Gemini <span class="country-label">国外</span></div>
+                        <a href="https://gemini.google.com/" class="tool-link" target="_blank">https://gemini.google.com/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="domestic-models">
+                <h3>2、国内大模型</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">智谱Z大模型 <span class="country-label">国内</span></div>
+                        <a href="https://chat.z.ai/" class="tool-link" target="_blank">https://chat.z.ai/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">豆包 <span class="country-label">国内</span></div>
+                        <a href="https://www.doubao.com/chat/" class="tool-link" target="_blank">https://www.doubao.com/chat/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">DeepSeek <span class="country-label">国内</span></div>
+                        <a href="https://chat.deepseek.com/" class="tool-link" target="_blank">https://chat.deepseek.com/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">秘塔AI搜索 <span class="country-label">国内</span></div>
+                        <a href="https://metaso.cn" class="tool-link" target="_blank">https://metaso.cn</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">夸克 <span class="country-label">国内</span></div>
+                        <a href="https://ai.quark.cn/" class="tool-link" target="_blank">https://ai.quark.cn/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">智谱清言 <span class="country-label">国内</span></div>
+                        <a href="https://chatglm.cn/" class="tool-link" target="_blank">https://chatglm.cn/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Kimi <span class="country-label">国内</span></div>
+                        <a href="https://kimi.moonshot.cn/" class="tool-link" target="_blank">https://kimi.moonshot.cn/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">讯飞星火 <span class="country-label">国内</span></div>
+                        <a href="https://xinghuo.xfyun.cn" class="tool-link" target="_blank">https://xinghuo.xfyun.cn</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">通义千问 <span class="country-label">国内</span></div>
+                        <a href="https://tongyi.aliyun.com/" class="tool-link" target="_blank">https://tongyi.aliyun.com/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">腾讯元宝 <span class="country-label">国内</span></div>
+                        <a href="https://yuanbao.tencent.com/" class="tool-link" target="_blank">https://yuanbao.tencent.com/</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="ai-agents">
+            <h2>二、AI智能体</h2>
+            
+            <div id="foreign-agents">
+                <h3>1、国外智能体</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">Lovart <span class="country-label">国外</span></div>
+                        <a href="https://www.lovart.ai/" class="tool-link" target="_blank">https://www.lovart.ai/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Manus <span class="country-label">国外</span></div>
+                        <a href="https://manus.im/guest" class="tool-link" target="_blank">https://manus.im/guest</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">GeneSpark <span class="country-label">国外</span></div>
+                        <a href="https://www.genspark.ai/" class="tool-link" target="_blank">https://www.genspark.ai/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Minimax <span class="country-label">国外</span></div>
+                        <a href="https://agent.minimax.io/" class="tool-link" target="_blank">https://agent.minimax.io/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Stitch <span class="country-label">国外</span></div>
+                        <a href="https://stitch.withgoogle.com/" class="tool-link" target="_blank">https://stitch.withgoogle.com/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Flowith Neo <span class="country-label">国外</span></div>
+                        <a href="https://flowith.io/blank" class="tool-link" target="_blank">https://flowith.io/blank</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">Medeo <span class="country-label">国外</span></div>
+                        <a href="https://ai.medeo.app/" class="tool-link" target="_blank">https://ai.medeo.app/</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="domestic-agents">
+                <h3>2、国内智能体</h3>
+                <div class="tools-grid">
+                    <div class="tool-card">
+                        <div class="tool-name">天工超级智能体 <span class="country-label">国内</span></div>
+                        <a href="https://skywork.ai" class="tool-link" target="_blank">https://skywork.ai</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">智谱AutoGLM沉思 <span class="country-label">国内</span></div>
+                        <a href="https://autoglm-research.zhipuai.cn" class="tool-link" target="_blank">https://autoglm-research.zhipuai.cn</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">心响 <span class="country-label">国内</span></div>
+                        <div class="tool-link">百度APP内置</div>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">扣子空间 <span class="country-label">国内</span></div>
+                        <a href="https://space.coze.cn" class="tool-link" target="_blank">https://space.coze.cn</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">通义千问 <span class="country-label">国内</span></div>
+                        <a href="https://chat.qwen.ai/" class="tool-link" target="_blank">https://chat.qwen.ai/</a>
+                    </div>
+                    
+                    <div class="tool-card">
+                        <div class="tool-name">腾讯混元 <span class="country-label">国内</span></div>
+                        <a href="https://hunyuan.tencent.com" class="tool-link" target="_blank">https://hunyuan.tencent.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>© 2023 AI工具导航 | 数据仅供参考，请以各官网最新信息为准</p>
+    </footer>
+</body>
+</html>
